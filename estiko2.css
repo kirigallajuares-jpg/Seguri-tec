@@ -128,18 +128,3 @@ li:hover:nth-child(3) {
         }
     }
 }
-
-li:hover:nth-child(4) {
-    & a {
-        background: #e4405f;
-
-        &::before {
-            background: #d81c3f;
-        }
-
-        &::after {
-            background: #e46880;
-
-        }
-    }
-}
