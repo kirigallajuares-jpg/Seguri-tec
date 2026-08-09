@@ -15,6 +15,7 @@ body {
 ul {
     font-family: "Roboto Condensed", sans-serif;
     display: flex;
+    padding: 0;
 }
 
 li {
@@ -24,8 +25,8 @@ li {
 
 .fa-brands {
     color: #262626;
-    font-size: 40px;
-    line-height: 80px;
+    font-size: 10px;
+    line-height: 2px;
     transition: .5s;
     padding-right: 14px;
 }
@@ -79,52 +80,54 @@ a:hover {
     box-shadow: -50px 50px 50px #00000080;
 }
 
-li:hover.fa-brands,
+li:hover .fa-brands,
 li:hover span {
     color: #fff;
 }
 
-li:hover:nth-child(1) {
-    & a {
-        background: #3b5998;
-
-        &::before {
-            background: #365492;
-        }
-
-        &::after {
-            background: #4a69ad;
-        }
-    }
-
+li:hover:nth-child(1) a {
+    background: #3b5998;
 }
 
-li:hover:nth-child(2) {
-    & a {
-        background: #00aced;
-
-        &::before {
-            background: #097aa5;
-        }
-
-        &::after {
-            background: #53b9e0;
-        }
-    }
-
+li:hover:nth-child(1) a::before {
+    background: #365492;
 }
 
-li:hover:nth-child(3) {
-    & a {
-        background: #dd4b39;
+li:hover:nth-child(1) a::after {
+    background: #4a69ad;
+}
 
-        &::before {
-            background: #b33a2b;
-        }
+li:hover:nth-child(2) a {
+    background: #00aced;
+}
 
-        &::after {
-            background: #b33a2b;
+li:hover:nth-child(2) a::before {
+    background: #097aa5;
+}
 
-        }
-    }
+li:hover:nth-child(2) a::after {
+    background: #53b9e0;
+}
+
+li:hover:nth-child(3) a {
+    background: #dd4b39;
+}
+
+li:hover:nth-child(3) a::before,
+li:hover:nth-child(3) a::after {
+    background: #b33a2b;
+}
+
+fa-brands {
+    color: #262626;
+    font-size: 60px;
+    line-height: 2px;
+    transition: .5s;
+    padding-right: 14px;
+}
+body{
+    background-image: url("pantalla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
