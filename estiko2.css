@@ -131,3 +131,13 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+.tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border: 2px solid black;
+    padding: 9px;
+    width: 10px;
+}
+
